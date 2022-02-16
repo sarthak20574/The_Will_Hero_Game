@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor_pane" maxHeight="360" maxWidth="600" minHeight="-Infinity" minWidth="600" onMouseClicked="#move_the_obstacles_back" prefHeight="360.0" prefWidth="3199.0" style="-fx-background-color: #9cefff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.the_will_hero_game.GameController">
+   <children>
+      <ImageView fx:id="rock1" fitHeight="69.0" fitWidth="161.0" layoutX="36.0" layoutY="212.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Islands6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock2" fitHeight="43.0" fitWidth="200.0" layoutX="245.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Islands10.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock3" fitHeight="93.0" fitWidth="216.0" layoutX="334.0" layoutY="212.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Islands4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock1" fitHeight="43.0" fitWidth="47.0" layoutX="222.0" layoutY="14.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/BalancingRocks6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree2" fitHeight="63.0" fitWidth="55.0" layoutX="356.0" layoutY="149.0" opacity="0.73" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Tree1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree1" fitHeight="52.0" fitWidth="34.0" layoutX="48.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Tree2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock2" fitHeight="34.0" fitWidth="77.0" layoutX="473.0" layoutY="48.0" opacity="0.63" pickOnBounds="true">
+         <image>
+            <Image url="@assets/BalancingRocks5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin1" fitHeight="19.0" fitWidth="17.0" layoutX="171.0" layoutY="171.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin2" fitHeight="19.0" fitWidth="17.0" layoutX="261.0" layoutY="171.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud1" fitHeight="40.0" fitWidth="121.0" layoutX="60.0" layoutY="41.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud2" fitHeight="43.0" fitWidth="99.0" layoutX="307.0" layoutY="59.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stick_wind_mill_3" fitHeight="73.0" fitWidth="10.0" layoutX="452.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@assets/windmill_pillar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chestClosed" fitHeight="35.0" fitWidth="55.0" layoutX="660.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/ChestClosed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock4" fitHeight="150.0" fitWidth="200.0" layoutX="631.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Islands1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock5" fitHeight="133.0" fitWidth="177.0" layoutX="922.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Islands9.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc1" fitHeight="43.0" fitWidth="52.0" layoutX="756.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/orc.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock6" fitHeight="126.0" fitWidth="216.0" layoutX="1138.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Islands1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc2" fitHeight="43.0" fitWidth="46.0" layoutX="1147.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Orc2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc3" fitHeight="43.0" fitWidth="46.0" layoutX="1211.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/orc.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc6" fitHeight="43.0" fitWidth="46.0" layoutX="2195.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/RedOrc1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin6" fitHeight="19.0" fitWidth="17.0" layoutX="1152.0" layoutY="123.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin7" fitHeight="19.0" fitWidth="17.0" layoutX="1222.0" layoutY="121.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin8" fitHeight="19.0" fitWidth="17.0" layoutX="1294.0" layoutY="121.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin4" fitHeight="19.0" fitWidth="17.0" layoutX="775.0" layoutY="135.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock7" fitHeight="95.0" fitWidth="161.0" layoutX="1435.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Islands6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin3" fitHeight="19.0" fitWidth="17.0" layoutX="682.0" layoutY="136.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="854.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="tree9" fitHeight="63.0" fitWidth="70.0" layoutX="2765.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Tree3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree3" fitHeight="63.0" fitWidth="70.0" layoutX="939.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Tree4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock3" fitHeight="73.0" fitWidth="44.0" layoutX="669.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/BalancingRocks2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock4" fitHeight="63.0" fitWidth="77.0" layoutX="1022.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/BalancingRocks3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree5" fitHeight="63.0" fitWidth="55.0" layoutX="1502.0" layoutY="153.0" opacity="0.73" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Tree1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock5" fitHeight="34.0" fitWidth="77.0" layoutX="1316.0" layoutY="26.0" opacity="0.63" pickOnBounds="true">
+         <image>
+            <Image url="@assets/BalancingRocks5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud3" fitHeight="43.0" fitWidth="99.0" layoutX="792.0" layoutY="40.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock6" fitHeight="43.0" fitWidth="47.0" layoutX="1687.0" layoutY="21.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/BalancingRocks6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud4" fitHeight="40.0" fitWidth="121.0" layoutX="1118.0" layoutY="28.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree6" fitHeight="52.0" fitWidth="34.0" layoutX="1765.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Tree2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock8" fitHeight="69.0" fitWidth="161.0" layoutX="1730.0" layoutY="212.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Islands6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc5" fitHeight="43.0" fitWidth="46.0" layoutX="1827.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Orc2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chestClosed1" fitHeight="35.0" fitWidth="55.0" layoutX="2095.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/ChestClosed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin11" fitHeight="19.0" fitWidth="17.0" layoutX="2028.0" layoutY="183.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin13" fitHeight="19.0" fitWidth="17.0" layoutX="2293.0" layoutY="167.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin9" fitHeight="19.0" fitWidth="17.0" layoutX="1742.0" layoutY="189.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin10" fitHeight="19.0" fitWidth="17.0" layoutX="1876.0" layoutY="167.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin5" fitHeight="19.0" fitWidth="17.0" layoutX="1014.0" layoutY="161.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock9" fitHeight="93.0" fitWidth="216.0" layoutX="2027.0" layoutY="212.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Islands4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock8" fitHeight="43.0" fitWidth="47.0" layoutX="2278.0" layoutY="20.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/BalancingRocks6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock7" fitHeight="34.0" fitWidth="77.0" layoutX="1951.0" layoutY="16.0" opacity="0.63" pickOnBounds="true">
+         <image>
+            <Image url="@assets/BalancingRocks5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud6" fitHeight="43.0" fitWidth="99.0" layoutX="1777.0" layoutY="19.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud7" fitHeight="40.0" fitWidth="121.0" layoutX="2074.0" layoutY="19.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree7" fitHeight="52.0" fitWidth="34.0" layoutX="2050.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Tree2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree8" fitHeight="63.0" fitWidth="55.0" layoutX="2363.0" layoutY="154.0" opacity="0.73" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Tree1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc7" fitHeight="43.0" fitWidth="52.0" layoutX="2464.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/RedOrc1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud5" fitHeight="40.0" fitWidth="121.0" layoutX="1469.0" layoutY="25.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock9" fitHeight="69.0" fitWidth="34.0" layoutX="2431.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/BalancingRocks2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up_rock10" fitHeight="63.0" fitWidth="77.0" layoutX="2682.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/BalancingRocks3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud8" fitHeight="43.0" fitWidth="99.0" layoutX="2519.0" layoutY="23.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud9" fitHeight="40.0" fitWidth="121.0" layoutX="2777.0" layoutY="20.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin15" fitHeight="19.0" fitWidth="17.0" layoutX="2423.0" layoutY="193.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin12" fitHeight="19.0" fitWidth="17.0" layoutX="2151.0" layoutY="183.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin14" fitHeight="19.0" fitWidth="17.0" layoutX="2382.0" layoutY="171.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock10" fitHeight="150.0" fitWidth="200.0" layoutX="2342.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Islands1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc4" fitHeight="43.0" fitWidth="46.0" layoutX="1286.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/RedOrc1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tree4" fitHeight="63.0" fitWidth="70.0" layoutX="1438.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Tree3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock11" fitHeight="125.0" fitWidth="1127.0" layoutX="2765.0" layoutY="212.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Islands2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bossOrc" fitHeight="125.0" fitWidth="140.0" layoutX="2902.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/OrcBoss.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="coinLabel" alignment="CENTER" layoutX="522.0" layoutY="15.0" prefHeight="15.0" prefWidth="34.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Label>
+      <Text fx:id="scoreText" fill="#b855ff" layoutX="245.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="47.0">
+         <font>
+            <Font name="Tahoma" size="29.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="204.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+      <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="309.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+      <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="559.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="58.0" />
+      <Rectangle fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="838.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
+      <Rectangle fx:id="rect5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="1093.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+      <Rectangle fx:id="rect6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="1362.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="64.0" />
+      <Rectangle fx:id="rect7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="1580.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+      <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#pause_game" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="34.0" layoutX="43.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@assets/Rockets.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="17.0" layoutX="14.0" layoutY="288.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/WeaponChampionLance.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="503.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Coin.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rect8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="1903.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="114.0" />
+      <Text layoutX="56.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Trebuchet MS" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Trebuchet MS" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="rect9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="2257.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
+      <Rectangle fx:id="rect10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="2565.0" layoutY="208.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="187.0" />
+   </children>
+</AnchorPane>

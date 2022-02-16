@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="MULTIPLY" prefHeight="360.0" prefWidth="600.0" style="-fx-background-image: url('file:src/main/resources/com/example/the_will_hero_game/assets/blur_bg.jpg');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.the_will_hero_game.ResultController">
+   <children>
+      <ImageView fitHeight="129.0" fitWidth="96.0" layoutX="34.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Princess.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="105.0" layoutX="464.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/orc.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="coins" layoutX="286.0" layoutY="146.0" prefHeight="43.0" prefWidth="38.0" text="60" textFill="YELLOW">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="236.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/result_coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="19.0" layoutY="307.0" onMouseClicked="#backToMenuM" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/homebutton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="545.0" layoutY="304.0" onMouseClicked="#restartGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/loadbutton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Pane focusTraversable="true" layoutX="197.0" layoutY="94.0" prefHeight="43.0" prefWidth="184.0" style="-fx-background-radius: 100;">
+         <children>
+            <Label layoutX="15.0" layoutY="-5.0" prefHeight="51.0" prefWidth="84.0" text="Score:" textFill="#0033cc">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="score" layoutX="105.0" layoutY="2.0" text="102" textFill="#0033cc">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane focusTraversable="true" layoutX="122.0" layoutY="200.0" prefHeight="135.0" prefWidth="336.0" style="-fx-background-color: #0033cc; -fx-background-radius: 100;">
+         <children>
+            <Label layoutX="102.0" layoutY="-2.0" prefHeight="43.0" prefWidth="138.0" text="Resurrect?" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="189.0" layoutY="48.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="72.0" prefWidth="80.0" style="-fx-background-color: ffddcc;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="63.0" layoutY="49.0" mnemonicParsing="false" onAction="#resurrect" prefHeight="72.0" prefWidth="80.0" style="-fx-background-color: #ffddcc;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView blendMode="DARKEN" fitHeight="43.0" fitWidth="62.0" layoutX="198.0" layoutY="54.0" onMouseClicked="#backToMenuM" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/die.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="43.0" fitWidth="62.0" layoutX="76.0" layoutY="57.0" onMouseClicked="#resurrect" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/resurrect.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="93.0" layoutY="100.0" text="YES" textAlignment="CENTER" />
+            <Label layoutX="220.0" layoutY="100.0" text="NO" />
+         </children>
+      </Pane>
+      <Label layoutX="164.0" layoutY="14.0" prefHeight="73.0" prefWidth="295.0" text="Game Over" textFill="#0033cc">
+         <font>
+            <Font name="Algerian" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoLabel" layoutX="198.0" layoutY="79.0" prefHeight="17.0" prefWidth="163.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <DisplacementMap>
+         <mapData>
+            <FloatMap />
+         </mapData>
+      </DisplacementMap>
+   </effect>
+</AnchorPane>

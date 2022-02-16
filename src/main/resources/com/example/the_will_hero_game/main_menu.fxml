@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" style="-fx-background-image: url('file:src/main/resources/com/example/the_will_hero_game/assets/main_bg_edited.jpg');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.the_will_hero_game.MainMenuController">
+   <children>
+      <Label layoutX="199.0" layoutY="24.0" prefHeight="97.0" prefWidth="205.0" style="-fx-background-image: url('file:src/main/resources/com/example/the_will_hero_game/assets/title_e.jpg');" />
+      <Button layoutX="246.0" layoutY="180.0" mnemonicParsing="false" onAction="#changeToStartNewGame" prefHeight="41.0" prefWidth="114.0" style="-fx-background-color: #009933;" text="New Game" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="222.0" layoutY="236.0" mnemonicParsing="false" onAction="#changeToSavedGame" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #009933;" text="Show Saved Games" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="41.0" layoutY="300.0" mnemonicParsing="false" onAction="#changeToCredits" style="-fx-background-color: #009933;" text="Credits" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="489.0" layoutY="300.0" mnemonicParsing="false" onAction="#changeToHow_To_Play" style="-fx-background-color: #009933;" text="How To Play" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="exitButton" layoutX="274.0" layoutY="300.0" mnemonicParsing="false" onAction="#changeToExit" style="-fx-background-color: #009933;" text="Exit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
